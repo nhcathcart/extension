@@ -23,9 +23,6 @@ function startTimer () {
             timeDisplay.innerText = '0:00';
             taskField.value = '';
             inputField.value = '';
-            let newTask = document.createElement('h4');
-            newTask.innerText = `❌ ${taskDisplay.innerText}`;
-            taskList.appendChild(newTask);
             taskDisplay.innerText = '';
             body.classList.remove('firework')
             timeDisplay.classList.remove('h1Black');
