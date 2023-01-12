@@ -5,18 +5,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 300;
-    width: 150;
-    border: solid black;
+    height: 300px;
+    width: 150px;
+    border: none;
     border-radius: 10px;
     font-family: 'Open Sans';
+    overflow: hidden;
+    scroll-behavior: auto;
 }
-
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
 input {
   border: none;
   background-color: rgb(235, 235, 235);
   border-radius: 5px;
-  margin: 0px 25px;
+  margin-top: 8px;
+  margin-left: 25px;
+  margin-right: 25px;
   height: 30px;
 }
 
@@ -24,12 +34,13 @@ button {
   border: none;
   border-radius: 5px;
   padding: 8px;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 #startButton {
-  background-color: #48EAF4;
-  color: #007279;
+  background-color: #ABFFD9;
+  color: #00791B;
 }
 
 #cancelButton {
@@ -40,7 +51,7 @@ button {
 h1 {
   font-size: 45px;
   font-family: 'Open Sans';
-  font-weight: 600;
+  font-weight: 800;
   color: rgb(197, 197, 197);
 }
 .h1Black {

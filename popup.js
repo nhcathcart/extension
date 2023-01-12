@@ -7,11 +7,11 @@ const taskField = document.getElementById('taskField')
 const inputField = document.getElementById('inputField')
 const body = document.getElementById('body')
 const download = document.getElementById('download')
-let completedTasks = '';
+const taskList = document.getElementById('completedTasks')
 
 function startTimer () {
     //multiply input time by 60 to handle it in seconds
-    
+        cancelButton.innerText = '❌ Cancel'
         let time = document.getElementById('inputField').value * 60;
         taskDisplay.innerText = document.getElementById('taskField').value
         timeDisplay.innerText = convertTime(time);
@@ -23,9 +23,14 @@ function startTimer () {
             timeDisplay.innerText = '0:00';
             taskField.value = '';
             inputField.value = '';
+            let newTask = document.createElement('h4');
+            newTask.innerText = `❌ ${taskDisplay.innerText}`;
+            taskList.appendChild(newTask);
             taskDisplay.innerText = '';
             body.classList.remove('firework')
             timeDisplay.classList.remove('h1Black');
+
+            
             return;
         })
     
@@ -33,12 +38,13 @@ function startTimer () {
         function intFunc () {
             if (time === 0){
                 clearTimeout(timer);
-                completedTasks += `${taskDisplay.innerText} \n`
+                let newTask = document.createElement('h4');
+                newTask.innerText = `✅ ${taskDisplay.innerText}`;
+                taskList.appendChild(newTask); 
                 cancelButton.innerText = 'Pick New Task';
                 taskDisplay.innerText = '';
                 body.classList.add('firework');
                 timeDisplay.classList.remove('h1Black');
-                console.log(completedTasks);
                 return //maybe do something
             };
         time -= 1;
