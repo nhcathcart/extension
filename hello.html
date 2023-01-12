@@ -1,6 +1,27 @@
 <html>
-  <body>
-    <h1>Hello Extensions</h1>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="container" id="body">
+    
+    <h1 id="timeDisplay">0:00</h1>
+    <h4 id="taskDisplay"></h4>
+    <input type="text" id="taskField" placeholder="Enter task">
+    <input type="text" id="inputField" placeholder="Enter mins">
+    <button id="startButton">Start Timer</button>
+    <button id="cancelButton" class="invisible" disabled="true">Cancel</button>
+    <span class="material-symbols-outlined" id="download">
+      download
+      </span>
+
+    <div id="completedTasks">
+        
+    </div>
     <script src="popup.js"></script>
+     
   </body>
 </html>

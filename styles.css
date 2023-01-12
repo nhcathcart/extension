@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300;
+    width: 150;
+    border: solid black;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+}
+
+input {
+  border: none;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  margin: 0px 25px;
+  height: 30px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 400;
+}
+
+#startButton {
+  background-color: #48EAF4;
+  color: #007279;
+}
+
+#cancelButton {
+  background-color: #FFCAD9;
+  color: #AB0006;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: rgb(197, 197, 197);
+}
+.h1Black {
+    color: black;
+}
+.invisible {
+    display: none;
+}
+
+.firework {
+    background-image: url('https://cliply.co/wp-content/uploads/2021/09/CLIPLY_372109170_FREE_FIREWORKS_400.gif');
+}
+
+.downloadbutton {
+  background-image: url('/download.png');
+  height: 20px;
+  width: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
